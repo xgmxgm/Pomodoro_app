@@ -1,0 +1,15 @@
+.timer {
+	@apply w-96 h-96 mt-9 bg-[#151932] rounded-full flex flex-col justify-center items-center shadow-2xl shadow-[#262B55];
+
+	&__circle {
+		@apply relative;
+	}
+
+	&__time {
+		@apply text-8xl font-bold fill-white opacity-65;
+	}
+
+	&__btn {
+		@apply mt-0 text-2xl text-white font-bold tracking-[8px] opacity-65;
+	}
+}

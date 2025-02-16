@@ -1,0 +1,15 @@
+.settings {
+	@apply mt-10;
+
+	&__list {
+		@apply flex flex-col;
+	}
+
+	&__item-title {
+		@apply text-custom-blue font-bold tracking-[4px] my-3;
+	}
+
+	&__item {
+		@apply flex items-center justify-between mb-5 flex-wrap;
+	}
+}

@@ -1,0 +1,19 @@
+.modal {
+	@apply absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-30 flex justify-center items-center;
+
+	&__content {
+		@apply w-[550px] h-[500px] bg-white rounded-3xl cursor-default text-center;
+	}
+
+	&__title {
+		@apply text-3xl font-bold text-[#1e2140] m-6 flex justify-between items-center tracking-[4px];
+	}
+
+	&__other-content {
+		@apply m-4;
+	}
+
+	&__line {
+		@apply border-none h-[2px] bg-gray-300;
+	}
+}

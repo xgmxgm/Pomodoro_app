@@ -1,0 +1,11 @@
+.num-input {
+	@apply flex flex-col;
+
+	&__title {
+		@apply text-gray-400 mb-1;
+	}
+
+	&__input {
+		@apply bg-gray-200 rounded-md p-2 w-36;
+	}
+}

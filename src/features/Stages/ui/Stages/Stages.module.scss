@@ -1,0 +1,15 @@
+.stages {
+	@apply bg-black bg-opacity-30 rounded-full p-[6px];
+
+	&__list {
+		@apply flex gap-2;
+	}
+
+	&__stage-item {
+		@apply text-white text-lg font-bold text-opacity-65 py-3 px-5;
+	}
+}
+
+.current {
+	@apply h-full rounded-full bg-opacity-70 text-[#1e2140] opacity-80;
+}
