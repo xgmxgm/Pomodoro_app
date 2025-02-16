@@ -2,7 +2,7 @@
 	@apply absolute top-0 left-0 w-screen h-screen bg-black bg-opacity-30 flex justify-center items-center;
 
 	&__content {
-		@apply w-[550px] h-[500px] bg-white rounded-3xl cursor-default text-center;
+		@apply w-[550px] bg-white rounded-3xl cursor-default text-center custom-lg:h-auto;
 	}
 
 	&__title {
@@ -15,5 +15,9 @@
 
 	&__line {
 		@apply border-none h-[2px] bg-gray-300;
+	}
+
+	&__footer {
+		@apply mt-auto translate-y-1/2;
 	}
 }

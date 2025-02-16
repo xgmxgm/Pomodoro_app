@@ -1,8 +1,8 @@
 import { motion } from 'framer-motion'
 import styles from './Timer.module.scss'
 import { type FC, useEffect, useState } from 'react'
-import { useTimerStore } from '@/app/store/timerStore'
-import { useColorStore } from '@/app/store/colorStore'
+import { useTimerStore } from '../../store/timerStore'
+import { useColorStore } from '@/features/Settings/store/colorStore'
 
 interface IProps {
 	periods: number

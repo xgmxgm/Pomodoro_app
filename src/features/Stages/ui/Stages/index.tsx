@@ -2,7 +2,7 @@ import { type FC } from 'react'
 import classNames from 'classnames'
 import { motion } from 'framer-motion'
 import styles from './Stages.module.scss'
-import { useColorStore } from '@/app/store/colorStore'
+import { useColorStore } from '@/features/Settings/store/colorStore'
 
 interface IProps {
 	stages: string[]

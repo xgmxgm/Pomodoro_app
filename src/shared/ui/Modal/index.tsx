@@ -70,7 +70,9 @@ export const Modal: FC<PropsWithChildren<IProps>> = ({
 						</div>
 						<hr className={styles['modal__line']} />
 						<div className={styles['modal__other-content']}>{children}</div>
-						<Button onClick={() => buttonFunction()}>Apply</Button>
+						<div className={styles['modal__footer']}>
+							<Button onClick={() => buttonFunction()}>Apply</Button>
+						</div>
 					</motion.div>
 				</motion.div>
 			)}

@@ -4,8 +4,8 @@ import styles from './Settings.module.scss'
 import { NumInput } from '@/shared/ui/NumInput'
 import { FontButton } from '@/shared/ui/FontButton'
 import { ColorButton } from '@/shared/ui/ColorButton'
-import { useTimerStore } from '@/app/store/timerStore'
-import { useColorStore } from '@/app/store/colorStore'
+import { useTimerStore } from '@/features/Timer/store/timerStore'
+import { useColorStore } from '@/features/Settings/store/colorStore'
 import { SettingsIcon } from '@/shared/ui/Icons/Settings'
 
 interface IProps {

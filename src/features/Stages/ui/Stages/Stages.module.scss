@@ -2,11 +2,11 @@
 	@apply bg-black bg-opacity-30 rounded-full p-[6px];
 
 	&__list {
-		@apply flex gap-2;
+		@apply flex gap-2 custom-lg:gap-0;
 	}
 
 	&__stage-item {
-		@apply text-white text-lg font-bold text-opacity-65 py-3 px-5;
+		@apply text-white text-lg font-bold text-opacity-65 py-3 px-5 custom-lg:text-base custom-md:text-sm custom-md:px-4;
 	}
 }
 

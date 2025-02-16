@@ -1,5 +1,5 @@
 import styles from './Button.module.scss'
-import { useColorStore } from '@/app/store/colorStore'
+import { useColorStore } from '@/features/Settings/store/colorStore'
 import { type ButtonHTMLAttributes, forwardRef } from 'react'
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {}

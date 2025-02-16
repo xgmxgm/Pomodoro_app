@@ -1,8 +1,8 @@
 import './styles/app.css'
 import { useState } from 'react'
 import { Timer } from '@/features/Timer'
-import { Settings } from '@/features/Settings'
 import { Stages } from '@/features/Stages'
+import { Settings } from '@/features/Settings'
 
 const stages_str: string[] = ['pomodoro', 'short break', 'long break']
 

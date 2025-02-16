@@ -10,6 +10,9 @@ export default {
 				'custom-lg': {
 					max: '590px',
 				},
+				'custom-md': {
+					max: '390px',
+				},
 			},
 		},
 	},
