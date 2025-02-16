@@ -8,10 +8,8 @@ const stages_str: string[] = ['pomodoro', 'short break', 'long break']
 
 function App() {
 	const [currentStage, setCurrentStage] = useState<string>('pomodoro')
-	const [periods, setPeriods] = useState<number>(5)
+	const [periods] = useState<number>(5)
 	const [font, setFont] = useState<string>('sans-serif')
-
-	console.log(setPeriods)
 
 	return (
 		<div className='app' style={{ fontFamily: font }}>
