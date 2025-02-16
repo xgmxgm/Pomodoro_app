@@ -4,9 +4,9 @@ import styles from './Settings.module.scss'
 import { NumInput } from '@/shared/ui/NumInput'
 import { FontButton } from '@/shared/ui/FontButton'
 import { ColorButton } from '@/shared/ui/ColorButton'
+import { SettingsIcon } from '@/shared/ui/Icons/Settings'
 import { useTimerStore } from '@/features/Timer/store/timerStore'
 import { useColorStore } from '@/features/Settings/store/colorStore'
-import { SettingsIcon } from '@/shared/ui/Icons/Settings'
 
 interface IProps {
 	font: string
@@ -46,7 +46,7 @@ export const Settings: FC<IProps> = ({ setFont, font }) => {
 	return (
 		<div className={styles['settings']}>
 			<button onClick={() => setIsOpen(true)}>
-				<SettingsIcon width='25' height='25' />
+				<SettingsIcon width='35' height='35' />
 			</button>
 			<Modal
 				buttonFunction={handleApply}
