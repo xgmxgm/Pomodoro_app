@@ -1,6 +1,8 @@
+import { motion } from 'framer-motion'
 import { type FC, useState } from 'react'
 import { Modal } from '@/shared/ui/Modal'
 import styles from './Settings.module.scss'
+import { pVariants } from '../../animations'
 import { NumInput } from '@/shared/ui/NumInput'
 import { FontButton } from '@/shared/ui/FontButton'
 import { ColorButton } from '@/shared/ui/ColorButton'
@@ -39,12 +41,16 @@ export const Settings: FC<IProps> = ({ setFont, font }) => {
 		setShortBreakTime(shortBreak)
 		setThemeColor(color)
 		setFont(fontState)
-
 		setIsOpen(false)
 	}
 
 	return (
-		<div className={styles['settings']}>
+		<motion.div
+			variants={pVariants}
+			initial='hidden'
+			animate='visible'
+			className={styles['settings']}
+		>
 			<button onClick={() => setIsOpen(true)}>
 				<SettingsIcon width='35' height='35' />
 			</button>
@@ -121,6 +127,6 @@ export const Settings: FC<IProps> = ({ setFont, font }) => {
 					</div>
 				</div>
 			</Modal>
-		</div>
+		</motion.div>
 	)
 }

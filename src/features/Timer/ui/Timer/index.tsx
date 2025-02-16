@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import styles from './Timer.module.scss'
+import { timeFormat } from '../../utils'
+import { pVariants } from '../../animations'
 import { type FC, useEffect, useState } from 'react'
 import { useTimerStore } from '../../store/timerStore'
 import { useColorStore } from '@/features/Settings/store/colorStore'
@@ -50,27 +52,6 @@ export const Timer: FC<IProps> = ({ periods, setCurrentStage }) => {
 				return
 			}
 		}
-	}
-
-	const timeFormat = (time: number) => {
-		const minutes = Math.floor((time % 3600) / 60)
-		const seconds = time % 60
-
-		return [
-			minutes.toString().padStart(2, '0'),
-			seconds.toString().padStart(2, '0'),
-		].join(':')
-	}
-
-	const pVariants = {
-		hidden: {
-			opacity: 0,
-			scale: 0,
-		},
-		visible: {
-			opacity: 1,
-			scale: 1,
-		},
 	}
 
 	useEffect(() => {

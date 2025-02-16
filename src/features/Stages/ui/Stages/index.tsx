@@ -2,6 +2,7 @@ import { type FC } from 'react'
 import classNames from 'classnames'
 import { motion } from 'framer-motion'
 import styles from './Stages.module.scss'
+import { pVariants } from '../../animations'
 import { useColorStore } from '@/features/Settings/store/colorStore'
 
 interface IProps {
@@ -11,17 +12,6 @@ interface IProps {
 
 export const Stages: FC<IProps> = ({ stages, currentStage }) => {
 	const { themeColor } = useColorStore()
-
-	const pVariants = {
-		hidden: {
-			opacity: 0,
-			scale: 0,
-		},
-		visible: {
-			opacity: 1,
-			scale: 1,
-		},
-	}
 
 	return (
 		<motion.div
