@@ -55,6 +55,13 @@ export const Timer: FC<IProps> = ({ periods, setCurrentStage }) => {
 	}
 
 	useEffect(() => {
+		setIsRunning(false)
+
+		setTime(pomodoroTime * 60)
+		setDuration(pomodoroTime * 60)
+	}, [pomodoroTime, shortBreakTime, longBreakTime])
+
+	useEffect(() => {
 		let timer: ReturnType<typeof setInterval>
 
 		if (isRunning) {
