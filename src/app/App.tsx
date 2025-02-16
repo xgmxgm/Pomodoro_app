@@ -11,6 +11,8 @@ function App() {
 	const [periods, setPeriods] = useState<number>(5)
 	const [font, setFont] = useState<string>('sans-serif')
 
+	console.log(setPeriods)
+
 	return (
 		<div className='app' style={{ fontFamily: font }}>
 			<Stages stages={stages_str} currentStage={currentStage} />
