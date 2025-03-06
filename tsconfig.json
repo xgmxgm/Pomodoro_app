@@ -5,6 +5,10 @@
 		{ "path": "./tsconfig.node.json" }
 	],
 	"compilerOptions": {
-		"moduleResolution": "node"
+		"moduleResolution": "node",
+		"baseUrl": "./",
+		"paths": {
+			"@/*": ["src/*"]
+		}
 	}
 }
